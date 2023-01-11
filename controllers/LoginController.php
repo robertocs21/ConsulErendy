@@ -2,6 +2,11 @@
 
 namespace Controllers;
 include '../models/doctores.php';
+include '../models/busqueda.php';
+include '../models/busquedadeuda.php';
+include '../models/deuda.php';
+include '../models/doctores.php';
+include '../models/historia.php';
 
 use Model\Doctores;
 use MVC\Router;
