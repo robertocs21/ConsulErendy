@@ -1,7 +1,6 @@
 <?php
 
 namespace Controllers;
-include '../models/doctores.php';
 include '../models/busqueda.php';
 include '../models/busquedadeuda.php';
 include '../models/deuda.php';
