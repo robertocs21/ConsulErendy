@@ -37,5 +37,8 @@ $router->post('/historia_hecha',[PacienteController::class, 'historia_hecha']);
 
 $router->get('/presupuestoact',[PacienteController::class, 'presupuestoact']);
 $router->post('/presupuestoact',[PacienteController::class, 'presupuestoact']);
+
+$router->get('/sesion',[LoginController::class, 'sesion']);
+$router->post('/sesion',[LoginController::class, 'sesion']);
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
