@@ -17,7 +17,7 @@ class PacienteController{
         $paciente = new Historia(); 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){           
             $paciente->sincronizar($_POST);
-            debuguear($paciente);
+            //debuguear($paciente);
             $resultado = $paciente->guardar();
             //debuguear($paciente);
             header("location: /presupuesto?folio=$paciente->folio");
