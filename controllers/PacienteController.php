@@ -1,13 +1,16 @@
 <?php
 
 namespace Controllers;
-
+include '../models/busqueda.php';
+include '../models/busquedadeuda.php';
+include '../models/deuda.php';
+include '../models/doctores.php';
+include '../models/historia.php';
 use Model\Historia;
 use Model\Busqueda;
 use Model\Deuda;
 use Model\BusquedaDeuda;
 use MVC\Router;
-
 include '../models/busqueda.php';
 include '../models/busquedadeuda.php';
 include '../models/deuda.php';
@@ -19,7 +22,7 @@ class PacienteController{
         $paciente = new Historia(); 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){           
             $paciente->sincronizar($_POST);
-            debuguear($paciente);
+            //debuguear($paciente);
             $resultado = $paciente->guardar();
             //debuguear($paciente);
             header("location: /presupuesto?folio=$paciente->folio");
