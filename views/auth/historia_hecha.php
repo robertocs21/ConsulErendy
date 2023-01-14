@@ -1,3 +1,26 @@
+<style>
+.labh2{
+        color: red;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-family: 'Roboto', sans-serif;
+    }
+    .inhxl2{
+        height: 40px;
+        width: 50%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 10px;
+        border-color: rgba(255, 255, 255, 0.16);
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 800;
+        color : red;
+    }
+    </style>
 <body class="back">
     <div class="hed">
         <img class="imfloat" src="build/img/d1.png">
