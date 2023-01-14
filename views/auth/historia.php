@@ -71,8 +71,8 @@
                         <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value=<?php echo s($paciente->tratamientoact)?>>
                     </li>
                     <li class="antecedentes">
-                        <label for="alID" id="alIDlab" class="labh"> Alergias </label>
-                        <input id="alID" class="inhxl" placeholder="N/A" type="text" name="alergias" value=<?php echo s($paciente->alergias)?>>
+                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
+                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value=<?php echo s($paciente->alergias)?>>
                     </li>
                    
 
@@ -152,8 +152,10 @@
                                 <option value="Persistente">Persistente</option>
                                 <option value="Nocturno">Nocturno</option>
                                 <option value="Morder">Al morder</option>
-                                <option value="Provocado al frio">Provocado al frío</option>
+                                <option value="Provocado al frío">Provocado al frío</option>
                                 <option value="Provocado al calor">Provocado al calor</option>
+                                <option value="A la percusión">A la percusión</option>
+                                <option value="Sordo">Sordo</option>
                             </select>
                         </li>
                         <li>

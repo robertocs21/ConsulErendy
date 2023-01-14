@@ -22,7 +22,7 @@
                         </tr>
                         <tr class="tr">
                             <td class="td">
-                                <p>Costo</p>
+                                <p>Costo total</p>
                             </td>
                             <td class="td">
                                 <input type="number" class="inpInv"  name="costo">
@@ -33,7 +33,7 @@
                         </tr>
                         <tr class="tr">
                             <td class="td">
-                                <p>Abono</p>
+                                <p>Paciente Abonó</p>
                             </td>
                             <td class="td">
                                 <input type="number" class="inpInv"  name="abono">
@@ -44,7 +44,7 @@
                         </tr>
                         <tr class="tr">
                             <td class="td">
-                                <p>Total</p>
+                                <p>Restan</p>
                             </td>
                             <?php foreach($resultado as $res):?>
                             <td class="td">

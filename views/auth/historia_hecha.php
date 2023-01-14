@@ -72,8 +72,8 @@
                         <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value="<?php echo s($paciente->tratamientoact)?>">
                     </li>
                     <li class="antecedentes">
-                        <label for="alID" id="alIDlab" class="labh"> Alergias </label>
-                        <input id="alID" class="inhxl" placeholder="N/A" type="text" name="alergias" value="<?php echo s($paciente->alergias)?>">
+                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
+                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value="<?php echo s($paciente->alergias)?>">
                     </li>
                    
 
@@ -155,6 +155,8 @@
                                 <option <?php echo $paciente->dolor === 'Al morder' ? 'selected' :''; ?> value="Al morder">Al morder</option>
                                 <option <?php echo $paciente->dolor === 'Provocado al frío' ? 'selected' :''; ?> value="Provocado al frío">Provocado al frío</option>
                                 <option <?php echo $paciente->dolor === 'Provocado al calor' ? 'selected' :''; ?> value="Provocado al calor">Provocado al calor</option>
+                                <option <?php echo $paciente->dolor === 'A la percusión' ? 'selected' :''; ?> value="A la percusión">A la percusión</option>
+                                <option <?php echo $paciente->dolor === 'Sordo' ? 'selected' :''; ?> value="Sordo">Sordo</option>
                             </select>
                         </li>
                         <li>
@@ -204,10 +206,6 @@
                         <input class="inhxl" type="text" id="radioID" name="radio" value="<?php echo s($paciente->radio)?>">
                     </li>
                     <li class="interpretacion">
-                        <label class="enlabh" for="diagID"> Diagnóstico Clínico: </label>
-                        <input class="inhxl" type="text" id="diagID" name="diag" value="<?php echo s($paciente->diag)?>">
-                    </li>
-                    <li class="interpretacion">
                         <label class="enlabh" for="trataID"> Tratamiento: </label>
                         <input class="inhxl" type="text" id="trataID" name="trat" value="<?php echo s($paciente->trat)?>">
                     </li>
@@ -216,10 +214,14 @@
                         <input class="inhxl" type="text" id="pronoID" name="pronostico" value="<?php echo s($paciente->pronostico)?>">
                     </li>
                     <li class="interpretacion">
+                        <label class="enlabh" for="diagID"> Diagnóstico Clínico: </label>
+                        <input class="inhxl" type="text" id="diagID" name="diag" value="<?php echo s($paciente->diag)?>">
+                    </li>
+                    <li class="interpretacion">
                         <label class="enlabh" for="diagnosticoPulparID"> Diagnóstico Pulpar: </label>
                         <select class="selectxl" id="diagnosticoPulparID" name="diagnosticoPulpar">
                             <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Normal' ? 'selected' :''; ?> value="Pulpa Normal">Pulpa Normal</option>
-                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulps Reversible' ? 'selected' :''; ?> value="Pulpa Reversible">Pulpa Reversible</option>
+                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Reversible' ? 'selected' :''; ?> value="Pulpa Reversible">Pulpa Reversible</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Irreversible Asintomática' ? 'selected' :''; ?> value="Pulpa Irreversible Asintomática">Pulpa Irreversible Asintomática</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Irreversible Sintomática' ? 'selected' :''; ?> value="Pulpa Irreversible Sintomática">Pulpa Irreversible Sintomática</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Necrosis Pulpar' ? 'selected' :''; ?>  value="Necrosis Pulpar">Necrosis Pulpar</option>

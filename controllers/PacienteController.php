@@ -8,6 +8,12 @@ use Model\Deuda;
 use Model\BusquedaDeuda;
 use MVC\Router;
 
+include '../models/busqueda.php';
+include '../models/busquedadeuda.php';
+include '../models/deuda.php';
+include '../models/doctores.php';
+include '../models/historia.php';
+
 class PacienteController{
     public static function historia(Router $router){
         $paciente = new Historia(); 
