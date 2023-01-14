@@ -217,6 +217,10 @@
                         <input class="inhxl" type="text" id="pronoID" name="pronostico" value=<?php echo s($paciente->pronostico)?>>
                     </li>
                     <li class="interpretacion">
+                        <label class="enlabh" for="diagID"> Diagnóstico Clínico: </label>
+                        <input class="inhxl" type="text" id="diagID" name="diag" value=<?php echo s($paciente->diag)?>>
+                    </li>
+                    <li class="interpretacion">
                         <label class="enlabh" for="diagnosticoPulparID"> Diagnóstico Pulpar: </label>
                         <select class="selectxl" id="diagnosticoPulparID" name="diagnosticoPulpar" value=<?php echo s($paciente->diagnosticoPulpar)?>>
                             <option value="Pulpa Normal">Pulpa Normal</option>
