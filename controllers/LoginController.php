@@ -1,9 +1,7 @@
 <?php
 
 namespace Controllers;
-include '../models/busqueda.php';
-include '../models/busquedadeuda.php';
-include '../models/deuda.php';
+
 include '../models/doctores.php';
 
 use Model\Doctores;
