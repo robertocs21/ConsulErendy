@@ -227,10 +227,7 @@
                         <label class="enlabh" for="radioID"> Interpretación Radiográfica: </label>
                         <input class="inhxl" type="text" id="radioID" name="radio" value=<?php echo s($paciente->radio)?>>
                     </li>
-                    <li class="interpretacion">
-                        <label class="enlabh" for="diagID"> Diagnóstico Clínico: </label>
-                        <input class="inhxl" type="text" id="diagID" name="diag" value=<?php echo s($paciente->diag)?>>
-                    </li>
+        
                     <li class="interpretacion">
                         <label class="enlabh" for="trataID"> Tratamiento: </label>
                         <input class="inhxl" type="text" id="trataID" name="trat" value=<?php echo s($paciente->trat)?>>
