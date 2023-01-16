@@ -109,7 +109,13 @@ class PacienteController{
             $abono = (int)$_POST['abono'];
             $cobro = (int)$_POST['costo'];
             $totalant =(int) $busqueda->total;
-            if(!$cobro){
+            if($abono && $cobro){
+                $total = $cobro - $abono;
+                $busqueda->total=$total;
+                $busqueda->guardar();
+                header("Location: presupuestoact?folio=$busqueda->folio");
+            }
+            elseif(!$cobro){
                 $total = $totalant - $abono;
                 $busqueda->total=$total;
                 
@@ -138,7 +144,13 @@ class PacienteController{
             $abono = (int)$_POST['abono'];
             $cobro = (int)$_POST['costo'];
             $totalant =(int) $busqueda->total;
-            if(!$cobro){
+            if($abono && $cobro){
+                $total = $cobro - $abono;
+                $busqueda->total=$total;
+                $busqueda->guardar();
+                header("Location: presupuestoact?folio=$busqueda->folio");
+            }
+            elseif(!$cobro){
                 $total = $totalant - $abono;
                 $busqueda->total=$total;
                 //debuguear($busqueda);
