@@ -244,9 +244,9 @@
                         <label class="enlabh" for="diagnosticoPulparID"> Diagnóstico Pulpar: </label>
                         <select class="selectxl" id="diagnosticoPulparID" name="diagnosticoPulpar">
                             <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Normal' ? 'selected' :''; ?> value="Pulpa Normal">Pulpa Normal</option>
-                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Reversible' ? 'selected' :''; ?> value="Pulpa Reversible">Pulpa Reversible</option>
-                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Irreversible Asintomática' ? 'selected' :''; ?> value="Pulpa Irreversible Asintomática">Pulpa Irreversible Asintomática</option>
-                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpa Irreversible Sintomática' ? 'selected' :''; ?> value="Pulpa Irreversible Sintomática">Pulpa Irreversible Sintomática</option>
+                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpitis Reversible' ? 'selected' :''; ?> value="Pulpitis Reversible">Pulpitis Reversible</option>
+                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpitis Irreversible Asintomática' ? 'selected' :''; ?> value="Pulpitis Irreversible Asintomática">Pulpitis Irreversible Asintomática</option>
+                            <option <?php echo $paciente->diagnosticoPulpar === 'Pulpitis Irreversible Sintomática' ? 'selected' :''; ?> value="Pulpitis Irreversible Sintomática">Pulpitis Irreversible Sintomática</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Necrosis Pulpar' ? 'selected' :''; ?>  value="Necrosis Pulpar">Necrosis Pulpar</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Tratado Previamente' ? 'selected' :''; ?>  value="Tratado Previamente">Tratado Previamente</option>
                             <option <?php echo $paciente->diagnosticoPulpar === 'Iniciado Previamente' ? 'selected' :''; ?>  value="Iniciado Previamente">Iniciado Previamente</option>

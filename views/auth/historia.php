@@ -247,9 +247,9 @@
                         <label class="enlabh" for="diagnosticoPulparID"> Diagnóstico Pulpar: </label>
                         <select class="selectxl" id="diagnosticoPulparID" name="diagnosticoPulpar" value=<?php echo s($paciente->diagnosticoPulpar)?>>
                             <option value="Pulpa Normal">Pulpa Normal</option>
-                            <option value="Pulpa Reversible">Pulpa Reversible</option>
-                            <option value="Pulpa Irreversible Asintomática">Pulpa Irreversible Asintomática</option>
-                            <option value="Pulpa Irreversible Sintomática">Pulpa Irreversible Sintomática</option>
+                            <option value="Pulpitis Reversible">Pulpitis Reversible</option>
+                            <option value="Pulpitis Irreversible Asintomática">Pulpitis Irreversible Asintomática</option>
+                            <option value="Pulpitis Irreversible Sintomática">Pulpitis Irreversible Sintomática</option>
                             <option value="Necrosis Pulpar">Necrosis Pulpar</option>
                             <option value="Tratado Previamente">Tratado Previamente</option>
                             <option value="Iniciado Previamente">Iniciado Previamente</option>
