@@ -84,27 +84,7 @@
                         <input id="telID" class="inh" type="tel" placeholder="+52" name="telefono" value=<?php echo s($paciente->telefono)?>>
                     </li>
                     <hr class="ruleh">
-                    <h3> Antecedentes </h3>
-                    <li class="antecedentes">
-                        <label for="patoID" class="labh"> Antecedentes Patológicos Personales </label>
-                        <input id="patoID" class="inhxl" placeholder="N/A" type="text" name="patologicos" value=<?php echo s($paciente->patologicos)?>>
-                    </li>
-                    <li class="antecedentes">
-                        <label for="tratID" class="labh"> Tratamiento Médico Actual </label>
-                        <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value=<?php echo s($paciente->tratamientoact)?>>
-                    </li>
-                    <li class="antecedentes">
-                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
-                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value=<?php echo s($paciente->alergias)?>>
-                    </li>
                    
-
-                    <hr class="ruleh">
-                    <h3> Antecedentes del Caso </h3>
-                    <textarea id="anteCasoID" class="texta" name="antcaso" value=<?php echo s($paciente->antcaso)?>> </textarea>
-
-
-                    <hr class="ruleh">
                     <h3> Riesgos </h3>
                     <li class="riesgos">
                         <ul class="ulf">
@@ -162,6 +142,25 @@
 
 
                     </li>
+                    <hr class="ruleh">
+                    <h3> Antecedentes </h3>
+                    <li class="antecedentes">
+                        <label for="patoID" class="labh"> Antecedentes Patológicos Personales </label>
+                        <input id="patoID" class="inhxl" placeholder="N/A" type="text" name="patologicos" value=<?php echo s($paciente->patologicos)?>>
+                    </li>
+                    <li class="antecedentes">
+                        <label for="tratID" class="labh"> Tratamiento Médico Actual </label>
+                        <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value=<?php echo s($paciente->tratamientoact)?>>
+                    </li>
+                    <li class="antecedentes">
+                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
+                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value=<?php echo s($paciente->alergias)?>>
+                    </li>
+                   
+
+                    <hr class="ruleh">
+                    <h3> Antecedentes del Caso </h3>
+                    <textarea id="anteCasoID" class="texta" name="antcaso" value=<?php echo s($paciente->antcaso)?>> </textarea>
 
                     <hr class="ruleh">
                     <h3> Interpretación Médica</h3>
@@ -183,22 +182,9 @@
                         </li>
                         <li>
                             <label class="labh" for="estadoID"> Estado de la pieza a tratar: </label>
-                            <select class="selectxl" id="estadoID" name="pieza">
-                                <option value="Aparentemente Sana">Aparentemente Sana</option>
-                                <option value="Con Caries">Con Caries</option>
-                                <option value="Sin Cavidad">Sin Cavidad</option>
-                                <option value="Con Cavidad">Con Cavidad</option>
-                                <option value="Oclusal">Oclusal</option>
-                                <option value="Mesial">Mesial</option>
-                                <option value="Distal">Distal</option>
-                                <option value="Lingual">Lingual</option>
-                                <option value="Palatina">Palatina</option>
-                                <option value="Cervical">Cervical</option>
-                                <option value="Radicular">Radicular</option>
-                                <option value="Grado 1">Grado 1</option>
-                                <option value="Grado 2">Grado 2</option>
-                                <option value="Grado 3">Grado 3</option>
-                            </select>
+                            <input class="selectxl" id="estadoID" name="pieza" placeholder="N/A">
+                                
+                            </input>
                         </li>
                     </ul>
                     <ul class="ul">
@@ -227,7 +213,6 @@
                         <label class="enlabh" for="radioID"> Interpretación Radiográfica: </label>
                         <input class="inhxl" type="text" id="radioID" name="radio" value=<?php echo s($paciente->radio)?>>
                     </li>
-        
                     <li class="interpretacion">
                         <label class="enlabh" for="trataID"> Tratamiento: </label>
                         <input class="inhxl" type="text" id="trataID" name="trat" value=<?php echo s($paciente->trat)?>>
@@ -405,7 +390,9 @@
 
                     <hr class="ruleh">
                     <h3>Observaciones Finales</h3>
-                    <textarea class="texta" name="finales" value=<?php echo s($paciente->finales)?>></textarea>
+                    <textarea class="texta" name="finales" value=<?php echo s($paciente->finales)?>></textarea><p>
+                    <label class="labh"> Fecha de obturación </label>
+                        <input class="inh" type="Date" name="fechaobt" value=<?php echo s($paciente->fechaobt)?> required>
 
                     <hr class="ruleh">
                     <input type="hidden" name = "total" value="0">

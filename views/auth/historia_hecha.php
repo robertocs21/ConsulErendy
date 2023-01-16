@@ -85,27 +85,6 @@
                         <input id="telID" class="inh" type="tel" placeholder="+52" name="telefono" value="<?php echo s($paciente->telefono)?>">
                     </li>
                     <hr class="ruleh">
-                    <h3> Antecedentes </h3>
-                    <li class="antecedentes">
-                        <label for="patoID" class="labh"> Antecedentes Patológicos Personales </label>
-                        <input id="patoID" class="inhxl" placeholder="N/A" type="text" name="patologicos" value="<?php echo s($paciente->patologicos)?>">
-                    </li>
-                    <li class="antecedentes">
-                        <label for="tratID" class="labh"> Tratamiento Médico Actual </label>
-                        <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value="<?php echo s($paciente->tratamientoact)?>">
-                    </li>
-                    <li class="antecedentes">
-                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
-                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value="<?php echo s($paciente->alergias)?>">
-                    </li>
-                   
-
-                    <hr class="ruleh">
-                    <h3> Antecedentes del Caso </h3>
-                    <textarea id="anteCasoID" class="texta" name="antcaso"><?php echo $paciente->antcaso;?> </textarea>
-
-
-                    <hr class="ruleh">
                     <h3> Riesgos </h3>
                     <li class="riesgos">
                         <ul class="ulf">
@@ -163,6 +142,26 @@
 
 
                     </li>
+                    <hr class="ruleh">
+                    <h3> Antecedentes </h3>
+                    <li class="antecedentes">
+                        <label for="patoID" class="labh"> Antecedentes Patológicos Personales </label>
+                        <input id="patoID" class="inhxl" placeholder="N/A" type="text" name="patologicos" value="<?php echo s($paciente->patologicos)?>">
+                    </li>
+                    <li class="antecedentes">
+                        <label for="tratID" class="labh"> Tratamiento Médico Actual </label>
+                        <input id="tratID" class="inhxl" placeholder="N/A" type="text" name="tratamientoact" value="<?php echo s($paciente->tratamientoact)?>">
+                    </li>
+                    <li class="antecedentes">
+                        <label for="alID" id="alIDlab" class="labh2"> Alergias </label>
+                        <input id="alID" class="inhxl2" placeholder="N/A" type="text" name="alergias" value="<?php echo s($paciente->alergias)?>">
+                    </li>
+                   
+
+                    <hr class="ruleh">
+                    <h3> Antecedentes del Caso </h3>
+                    <textarea id="anteCasoID" class="texta" name="antcaso"><?php echo $paciente->antcaso;?> </textarea>
+
 
                     <hr class="ruleh">
                     <h3> Interpretación Médica</h3>
@@ -184,22 +183,7 @@
                         </li>
                         <li>
                             <label class="labh" for="estadoID"> Estado de la pieza a tratar: </label>
-                            <select class="selectxl" id="estadoID" name="pieza">
-                                <option <?php echo $paciente->pieza === 'Aparentemente Sana' ? 'selected' :''; ?> value="Aparentemente Sana">Aparentemente Sana</option>
-                                <option <?php echo $paciente->pieza === 'Con Caries' ? 'selected' :''; ?> value="Con Caries">Con Caries</option>
-                                <option <?php echo $paciente->pieza === 'Sin Cavidad' ? 'selected' :''; ?> value="Sin Cavidad">Sin Cavidad</option>
-                                <option <?php echo $paciente->pieza === 'Con Cavidad' ? 'selected' :''; ?> value="Con Cavidad">Con Cavidad</option>
-                                <option <?php echo $paciente->pieza === 'Oclusal' ? 'selected' :''; ?> value="Oclusal">Oclusal</option>
-                                <option <?php echo $paciente->pieza === 'Mesial' ? 'selected' :''; ?> value="Mesial">Mesial</option>
-                                <option <?php echo $paciente->pieza === 'Distal' ? 'selected' :''; ?> value="Distal">Distal</option>
-                                <option <?php echo $paciente->pieza === 'Lingual' ? 'selected' :''; ?> value="Lingual">Lingual</option>
-                                <option <?php echo $paciente->pieza === 'Palatina' ? 'selected' :''; ?> value="Palatina">Palatina</option>
-                                <option <?php echo $paciente->pieza === 'Cervical' ? 'selected' :''; ?> value="Cervical">Cervical</option>
-                                <option <?php echo $paciente->pieza === 'Radicular' ? 'selected' :''; ?> value="Radicular">Radicular</option>
-                                <option <?php echo $paciente->pieza === 'Grado 1' ? 'selected' :''; ?> value="Grado 1">Grado 1</option>
-                                <option <?php echo $paciente->pieza === 'Grado 2' ? 'selected' :''; ?> value="Grado 2">Grado 2</option>
-                                <option <?php echo $paciente->pieza === 'Grado 3' ? 'selected' :''; ?> value="Grado 3">Grado 3</option>
-                            </select>
+                            <input class="selectxl" id="estadoID" name="pieza" placeholder="N/A" value="<?php echo s($paciente->pieza)?>">
                         </li>
                     </ul>
                     <ul class="ul">
@@ -405,7 +389,9 @@
 
                     <hr class="ruleh">
                     <h3>Observaciones Finales</h3>
-                    <textarea class="texta" name="finales" ><?php echo s($paciente->finales)?></textarea>
+                    <textarea class="texta" name="finales" ><?php echo s($paciente->finales)?></textarea><p>
+                    <label class="labh"> Fecha de obturación </label>
+                    <input class="inh" type="Date" name="fechaobt" value=<?php echo s($paciente->fechaobt)?> required>
 
                     <hr class="ruleh">
                     

@@ -82,7 +82,8 @@ class Historia extends ActiveRecord{
     'total',
     'fechatotal',
     'diagnosticoPulpar',
-    'diagnosticoPeriapical'];
+    'diagnosticoPeriapical',
+    'fechaobt'];
 
    public $id;
    public $remitidor;
@@ -163,6 +164,7 @@ class Historia extends ActiveRecord{
    public $fechatotal;
    public $diagnosticoPulpar;
    public $diagnosticoPeriapical;
+   public $fechaobt;
 
     public function __construct($args = []){
         $this->id = $args['id'] ?? null;
@@ -244,7 +246,8 @@ class Historia extends ActiveRecord{
         $this->total = $args['total'] ?? '';
         $this->fechatotal = $args['fechatotal'] ?? '';
         $this->diagnosticoPulpar = $args['diagnosticoPulpar'] ?? '';
-        $this->fechatotal = $args['diagnosticoPeriapical'] ?? '';
+        $this->diagnosticoPeriapical = $args['diagnosticoPeriapical'] ?? '';
+        $this->fechaobt= $args['fechaobt'] ?? '';
     
         
 
