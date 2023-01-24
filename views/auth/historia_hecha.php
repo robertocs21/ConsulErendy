@@ -39,7 +39,7 @@
                         <label class="labh"> Fecha </label>
                         <input class="inh" type="Date" name="fecha" value="<?php echo s($paciente->fecha);?>" required>
 
-                        <label class="labh"> Folio </label>
+                        <label class="labh"> Número de pieza a tratar </label>
                         <input class="inh" type="num" name="folio"value="<?php echo s($paciente->folio);?>" required>
                     </li>
                     <hr class="ruleh">
