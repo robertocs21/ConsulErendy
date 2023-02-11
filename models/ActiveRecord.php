@@ -141,7 +141,7 @@ class ActiveRecord {
         return  $resultado  ; 
     }
     public static function buscarfolio($folio) {
-        $query = " SELECT * FROM pacientes WHERE folio LIKE '%".$folio."%' ";
+        $query = " SELECT * FROM pacientes WHERE folio LIKE '%".$folio."%' LIMIT 1 ";
         $resultado = self::consultarSQL($query);
         return  $resultado  ; 
     }
