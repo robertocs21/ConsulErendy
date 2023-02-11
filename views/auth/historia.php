@@ -39,7 +39,7 @@
                         <input class="inh" type="Date" name="fecha" value=<?php echo s($paciente->fecha)?> required>
 
                         <label class="labh"> Número de pieza a tratar </label>
-                        <input class="inh" type="num" name="folio"value=<?php echo s($paciente->folio)?> required>
+                        <input class="inh" type="num" name="num"value=<?php echo s($paciente->num)?> >
                     </li>
                     <hr class="ruleh">
                     <h3> Datos Personales </h3>
@@ -397,7 +397,9 @@
                     <hr class="ruleh">
                     <input type="hidden" name = "total" value="0">
                     <input type="hidden" name = "fechatotal" value="0">
-                    
+                    <?php foreach($ultimo as $ult):?>
+                    <input type="hidden" name = "folio" value="<?php echo s($paciente->folio = $ult->folio+1)?>">
+                    <?php endforeach;  ?>
                 </ul>
         </div>
         <div class="btn-regresar-container-h">

@@ -108,6 +108,12 @@ class ActiveRecord {
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
+    // Todos los registros
+    public static function last() {
+        $query = "SELECT * FROM " . static::$tabla ." ORDER BY id DESC LIMIT 1";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
 
     // Busca un registro por su id
     public static function find($id) {

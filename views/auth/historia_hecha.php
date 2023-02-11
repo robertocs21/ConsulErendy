@@ -40,7 +40,7 @@
                         <input class="inh" type="Date" name="fecha" value="<?php echo s($paciente->fecha);?>" required>
 
                         <label class="labh"> Número de pieza a tratar </label>
-                        <input class="inh" type="num" name="folio"value="<?php echo s($paciente->folio);?>" required>
+                        <input class="inh" type="num" name="num"value="<?php echo s($paciente->num);?>" required>
                     </li>
                     <hr class="ruleh">
                     <h3> Datos Personales </h3>
@@ -398,7 +398,7 @@
                 </ul>
         </div>
         <div class="btn-regresar-container-h">
-            <a class="btn-regresar" href="buscar"> < Buscar </a>
+            <a class="btn-regresar" href="direc"> < Directorio </a>
         </div>
         
         <div class="presupuesto">

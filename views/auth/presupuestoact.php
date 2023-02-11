@@ -132,7 +132,7 @@
                 </li>
             </ul>
             <div class="btn-regresar-container">
-            <a class="btn-regresar" href="historia_hecha?id=<?php echo $res->id?>"> < Historia Clínica </a>
+            <a class="btn-regresar" href="direc?id=<?php echo $res->id?>"> < Directorio </a>
         </div>
         
         <div class="presupuesto">

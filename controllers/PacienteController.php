@@ -16,6 +16,7 @@ use MVC\Router;
 class PacienteController{
     public static function historia(Router $router){
         $paciente = new Historia(); 
+        $ultimo = $paciente->last();
         if($_SERVER['REQUEST_METHOD'] === 'POST'){           
             $paciente->sincronizar($_POST);
             //debuguear($paciente);
@@ -24,7 +25,8 @@ class PacienteController{
             header("location: /presupuesto?folio=$paciente->folio");
         }
         $router->render('auth/historia',[
-            'paciente'=> $paciente
+            'paciente'=> $paciente,
+            'ultimo' =>$ultimo
 
             
         ]);
