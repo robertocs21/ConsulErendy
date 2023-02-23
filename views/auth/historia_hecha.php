@@ -403,7 +403,7 @@
         
         <div class="presupuesto">
             <a class="btnh" type="submit" href="presupuestoact?folio=<?php echo $paciente->folio?>"> Presupuesto </a>
-            <button class="btnh" type="submit"> Actualizar </button>
+            <button class="btnh" type="submit"> Guardar </button>
         </div>
     </div>
   
