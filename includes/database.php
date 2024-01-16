@@ -1,9 +1,9 @@
 <?php
 $db = mysqli_connect(
-    $_ENV['DB_HOST'], 
-    $_ENV['DB_USER'], 
-    $_ENV['DB_PASS'],
-    $_ENV['DB_BD']);
+   'u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 
+    'r2t76r58tpspv731', 
+   'u4hgb5phwafsafhg',
+    'cu2u8abyoprq800m');
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
