@@ -14,4 +14,4 @@ Lenguaje: PHP (sin frameworks)
 Base de datos: MySQL
 Frontend: HTML, CSS, JavaScript básico
 Servidor: Apache
-}<img width="1119" alt="Captura de pantalla 2025-05-06 a la(s) 2 28 20 p m" src="https://github.com/user-attachments/assets/9ae14119-30c4-46fe-a77f-067e3d490c2a" />
+<img width="1050" alt="Captura de pantalla 2025-05-06 a la(s) 2 28 49 p m" src="https://github.com/user-attachments/assets/9c61db92-79de-40d0-b865-3471b6e7ec7e" />
