@@ -8,11 +8,9 @@ use MVC\Router;
 
 $router = new Router();
 
-$router->get('/',[LoginController::class, 'login']);
-$router->post('/',[LoginController::class, 'login']);
 
-$router->get('/direc',[LoginController::class, 'direc']);
-$router->post('/direc',[LoginController::class, 'direc']);
+$router->get('/',[LoginController::class, 'direc']);
+$router->post('/',[LoginController::class, 'direc']);
 
 $router->get('/historia',[PacienteController::class, 'historia']);
 $router->post('/historia',[PacienteController::class, 'historia']);

@@ -1,9 +1,10 @@
 <?php
 $db = mysqli_connect(
-   'u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', 
-    'r2t76r58tpspv731', 
-   'u4hgb5phwafsafhg',
-    'cu2u8abyoprq800m');
+   'tramway.proxy.rlwy.net',
+    'root',
+   'YcSclkqRoEaowAVEVHurioYpHiWeJJRA',
+    'railway',
+    39295);
 
 if (!$db) {
     echo "Error: No se pudo conectar a MySQL.";
